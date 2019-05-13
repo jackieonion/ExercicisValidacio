@@ -34,6 +34,17 @@ public class TestPunt {
         assertEquals(4, p.getY());
     }
     
+    @Test(expected = IllegalArgumentException.class)
+    public void testPuntPositiuConstructor() {
+    	Punt p = new Punt(2, -2);
+    }
+    
+    @Test(expected = IllegalArgumentException.class)
+    public void testPuntPositiuSet() {
+    	Punt p = new Punt();
+    	p.setX(-2);
+    }
+    
     @Test
     public void testSuma() {
     	// comprova que el mètode suma() funciona correctament.

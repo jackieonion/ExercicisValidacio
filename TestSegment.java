@@ -7,7 +7,7 @@ public class TestSegment {
 	public void testLongitud() {
 		// comprova que retorna bé la longitud
 		Segment s = new Segment();
-		assertEquals(2.8284271247461903, s.longitud(), 0);
+		assertEquals(2.8284271247461903, s.longitud(), 0.001);
 	}
 	
 	public static void main(String[] args) {
