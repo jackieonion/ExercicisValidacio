@@ -33,6 +33,16 @@ public class TestPunt {
         assertEquals(3, p.getX());
         assertEquals(4, p.getY());
     }
+    
+    @Test
+    public void testSuma() {
+    	// comprova que el mètode suma() funciona correctament.
+    	Punt p = new Punt(3, 4);
+    	Punt p2 = new Punt(1, 1);
+    	p.suma(p2);
+    	assertEquals(4, p.getX());
+    	assertEquals(5, p.getY());
+    }
 
     public static void main(String args[]) {
         org.junit.runner.JUnitCore.main("TestPunt");
