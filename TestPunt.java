@@ -15,6 +15,16 @@ public class TestPunt {
         assertEquals(0, p.getX()); // Afirma que la coordenada x val 0
         assertEquals(0, p.getY());
     }
+    
+    @Test
+    public void testPuntSet() {
+    	// comprova que els mètodes setX() i setY() assignen correctament
+    	Punt p = new Punt();
+    	p.setX(3); // Assignem valors
+    	p.setY(4);
+    	assertEquals(3, p.getX()); // Afirma que els valors assignats són correctes
+    	assertEquals(4, p.getY());
+    }
 
     public static void main(String args[]) {
         org.junit.runner.JUnitCore.main("TestPunt");
