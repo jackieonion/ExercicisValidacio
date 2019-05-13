@@ -25,6 +25,14 @@ public class TestPunt {
     	assertEquals(3, p.getX()); // Afirma que els valors assignats són correctes
     	assertEquals(4, p.getY());
     }
+    
+    @Test
+    public void testPuntDefinit() {
+        // comprova que el constructor Punt(int,int) deixi els valors correctes
+        Punt p = new Punt(3, 4);
+        assertEquals(3, p.getX());
+        assertEquals(4, p.getY());
+    }
 
     public static void main(String args[]) {
         org.junit.runner.JUnitCore.main("TestPunt");
